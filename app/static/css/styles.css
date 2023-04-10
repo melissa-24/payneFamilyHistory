@@ -22,6 +22,11 @@
   justify-content: center;
   align-items: center;
 }
+.box {
+  border: 2px groove #C27264;
+  background-color: #B35241;
+  box-shadow: 0.1em 0.25em 0.75em #C27264;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -32,4 +37,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: soft-light;
+  color: #f2e6ff;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px groove #C27264;
+  background-color: #B35241;
+  box-shadow: 0.1em 0.25em 0.75em #C27264;
+  width: 95%;
+}
+body header img {
+  max-width: 200px;
 }

@@ -65,7 +65,8 @@ WSGI_APPLICATION = 'payneFamilyHistory.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        # 'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         # 'NAME': 'DB',
         'NAME': 'craftsnh_paynes',
         # 'USER': 'DB_USER',
