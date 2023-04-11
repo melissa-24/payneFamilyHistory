@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+    <link rel="stylesheet" href="{% static 'css/imageGrid.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'images/sNt.png' %}" />
     <title>Payne Family</title>
 </head>
@@ -23,7 +24,24 @@
         {% endif %}
     </div>
     <main>
-        
+        <div class="imgGrid">
+            <div class="container">
+                <div class="column"></div>
+                <div class="column">
+                    <div class="row"></div>
+                    <div class="row">
+                        <div class="theText">
+                            <div class="text">
+                                <h4>The Happy Couple <br>
+                                Ken and Debby Payne</h4>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="row"></div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         {% block footer %} {% include 'footer.html' %} {% endblock footer %}

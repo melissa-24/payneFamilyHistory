@@ -48,7 +48,14 @@ body header {
   background-color: #B35241;
   box-shadow: 0.1em 0.25em 0.75em #C27264;
   width: 95%;
+  z-index: 1;
 }
 body header img {
   max-width: 200px;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
