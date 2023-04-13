@@ -15,13 +15,38 @@ body {
         // background-color: @oldGold;
         width: 95%;
         z-index: 1;
+        justify-content: space-between;
 
         img {
             max-width: 200px;
+            margin: .5em 1em;
+        }
+        nav {
+            .flexrow();
+            margin: .5em 1em;
+
+            a {
+                text-decoration: none;
+            }
         }
     }
     main {
         .flexcolumn();
+        width: 95%;
 
+        .about {
+            .flexcolumn();
+            position: relative;
+            margin-top: -7vw;
+            color: @black;
+            box-shadow: .10em .25em .75em @paleRed;
+            background-color: @paleRedTransparent;
+            width: 85%;
+            padding: .2em 1em;
+        }
+
+    }
+    footer {
+        .flexcolumn();
     }
 }

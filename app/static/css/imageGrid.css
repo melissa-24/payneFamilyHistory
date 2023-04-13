@@ -44,7 +44,7 @@ h4 {
 	/* border: 3px solid blue; */
 	transform: rotateZ(-51deg);
 	border-radius: 50%;
-	height: 36vw;
+	height: 34vw;
     width: 36vw;
 	box-shadow: 0.1em 0.25em 0.75em #C27264;
     position: relative;
@@ -97,8 +97,8 @@ h4 {
 	/* transform: rotateZ(61deg); */
 	height: 25vw;
     width: 22vw;
-    margin-top:11vw;
-    margin-left: 19vw;
+    margin-top: 2vw;
+    margin-left: 21vw;
 	border-radius: 50%;
 	box-shadow: .10em .25em .75em #C27264;
 	position: absolute;
