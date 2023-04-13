@@ -1,199 +1,109 @@
 h4 {
     font-family: sans-serif;
 }
-
-.imgGrid {
-	position: relative;
-	/* overflow: hidden; */
-	height: 50vw;
-	background: #fff;
-	margin-bottom: 60px;
-}
-
-.imgGrid .container {
+.theGrid {
 	display: flex;
-	align-items: flex-end;
-	position: absolute;
-	top: -30vw;
-	left: -40vw;
-	transform: rotateZ(45deg);
-	height: 83vw;
-	width: 62vw;
-}
-
-.imgGrid .container .column {
-	overflow: hidden;
+	height: 42vw;
+	width: 94vw;
+	/* border: 1px solid white; */
+	margin-top: 24px;
 	position: relative;
 }
-
-.imgGrid .container .column:nth-of-type(1) {
-	border-right: 5px solid white;
-    box-shadow: .10em .25em .75em #C27264;
-    bottom: 6vw;
-	width: 59vw;
-	height: 31vw;
-    border-radius: 50%;
-}
-
-.imgGrid .container .column:nth-of-type(1):hover {
-	opacity: 0.75;
-	cursor: pointer;
-}
-
-.imgGrid .container .column:nth-of-type(1):before {
-	position: absolute;
-    border-radius: 50%;
-	top: -4vw;
-	left: -2vw;
-	background-repeat: no-repeat;
-	background-size: contain;
-	transform: rotateZ(-38deg);
-	content: "";
-	width: 39vw;
-	height: 34vw;
-	background-image: url('../images/momDad04.jpg');
-}
-
-
-.imgGrid .container .column:nth-of-type(2) {
+.section {
 	display: flex;
-	flex-direction: column;
-	width: 75%;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row {
-	border-top: 8px solid #fff;
-}
-
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(1) {
-	position: relative;
-	overflow: hidden;
-	height: 59vw;
-    border-radius: 50%;
-    box-shadow: .10em .25em .75em #C27264;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(1):hover {
-	opacity: 0.75;
-	cursor: pointer;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(1):before {
 	position: absolute;
-    top: 4.9vw;
-    left: -6.3vw;
-	background-repeat: no-repeat;
-	background-size: cover;
-    transform: rotateZ(-45deg);
-    content: "";
-    width: 44vw;
-    height: 48vw;
-	background-image: url('../images/momDad07.jpg');
+    height: 10vw;
+    width: 50vw;
+	/* transform: rotateZ(45deg); */
 }
-
-.imgGrid .container .column:nth-of-type(2) .row .theText {
-    /* background-color: red; */
+.section div:nth-of-type(1) {
+	/* border: 3px solid red; */
+	transform: rotateZ(20deg);
+    border-radius: 50%;
+	height: 35vw;
+    width: 30vw;
+    box-shadow: 0.1em 0.25em 0.75em #C27264;
     position: relative;
 }
-
-.imgGrid .container .column:nth-of-type(2) .row .theText .text{
-    background-color: red;
-    position: absolute;
-    top: -67vw;
-    transform: rotateZ(-45deg);
+.section div:nth-of-type(1) img {
+	transform: rotateZ(-16deg);
+    width: 28vw;
+    overflow: hidden;
+	position: absolute;
+	border-radius: 50%;
+	box-shadow: 0.5em 0.35em 0.95em #C27264;
+}
+.section .hiddenBox {
+	width: 6vw;
+	height: 28vw;
+	border-radius: 50%;
+	transform: rotateZ(-33deg);
+	box-shadow: 0.1em 0.25em 0.75em #C27264;
+}
+.section div:nth-of-type(3) {
+	/* border: 3px solid blue; */
+	transform: rotateZ(-51deg);
+	border-radius: 50%;
+	height: 33vw;
+    width: 26vw;
+	box-shadow: 0.1em 0.25em 0.75em #C27264;
+    position: relative;
+}
+.section div:nth-of-type(3) img {
+	transform: rotateZ(77deg);
+    width: 21vw;
+    overflow: hidden;
+	position: absolute;
+	border-radius: 50%;
+	box-shadow: .10em .25em .75em #C27264;
 }
 
-/* .imgGrid .container .column:nth-of-type(2) .row:nth-of-type(2) {
+.altSection {
 	display: flex;
-	height: 40.5vw;
+	position: absolute;
+	margin-left: 46vw;
+    margin-top: -8vw;
+    height: 18vw;
+    width: 37vw;
+	margin-top: 150px;
+    margin-left: 144px;
+	/* transform: rotateZ(-45deg); */
 }
 
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
-	border-top: none;
+.altSection div {
+	height: 15vw;
+    width: 21vw;
+	box-shadow: .10em .25em .75em #C27264;
 }
 
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) {
+.altSection div:nth-of-type(1) {
+	/* border: 3px solid black; */
+	/* transform: rotateZ(34deg); */
+	height: 5vw;
+    width: 18vw;
+	box-shadow: .10em .25em .75em #C27264;
+	border-radius: 50%;
+}
+
+.altSection div:nth-of-type(1) img {
+	width: 22vw;
 	overflow: hidden;
-	width: 30%;
-	background-color: #8B8B8A;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text {
-	width: 100%;
-	height: 100%;
-	overflow: visible;
-	transform: rotateZ(-45deg);
-	position: relative;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text h6 {
 	position: absolute;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 1.35vw;
-	width: 20vw;
-	top: 16vw;
-	left: 7vw;
-	line-height: 1.55vw;
+	box-shadow: .10em .25em .75em #C27264;
+}
+.altSection div:nth-of-type(2) {
+	border: 3px solid purple;
+	/* transform: rotateZ(61deg); */
+	height: 16vw;
+    width: 27vw;
+    margin-top: 18vw;
+    margin-right: 8vw;
+	box-shadow: .10em .25em .75em #C27264;
 }
 
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text p {
-	text-align: right;
-	position: absolute;
-	color: #fff;
-	font-size: 0.9vw;
-	width: 18vw;
-	top: 23.5vw;
-	left: -3.5vw;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2) {
-	position: relative;
-	width: 70%;
-	border-left: 8px solid white;
+.altSection div:nth-of-type(2) img {
+	width: 22vw;
 	overflow: hidden;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):hover {
-	opacity: 0.75;
-	cursor: pointer;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):before {
 	position: absolute;
-	top: 0;
-	left: -40vw;
-	width: 110.1vw;
-	height: 110vw;
-	background-repeat: no-repeat;
-	background-size: cover;
-	transform: rotateZ(-45deg);
-	content: "";
-	background-image: url('../images/momDad07.jpg');
+	box-shadow: .10em .25em .75em #C27264;
 }
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
-	position: relative;
-	height: 18.6vw;
-	overflow: hidden;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(3):hover {
-	opacity: 0.75;
-	cursor: pointer;
-}
-
-.imgGrid .container .column:nth-of-type(2) .row:nth-of-type(3):before {
-	position: absolute;
-	top: 7.5vw;
-	left: 25vw;
-	width: 33vw;
-	height: 27vw;
-	background-repeat: no-repeat;
-	background-size: cover;
-	transform: rotateZ(-45deg);
-	content: "";
-	background-image: url('../images/momDad10.jpg');
-} */
