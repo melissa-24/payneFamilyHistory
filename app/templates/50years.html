@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/styles.css'%}">
-    <link rel="stylesheet" href="{% static 'css/imageGrid.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'images/sNt.png' %}" />
     <title>Payne Family</title>
 </head>
@@ -24,26 +23,18 @@
         {% endif %}
     </div>
     <main>
-        <div class="theGrid">
-            <div class="section">
-                <div>
-                    <img src="{% static 'images/momDad04.jpg'%}" alt="">
-                </div>
-                <div class="hiddenBox"></div>
-                <div>
-                    <img src="{% static 'images/momDad05.jpg'%}" alt="">
-                </div>
-            </div>
-            <div class="altSection">
-                <div>
-                    <img src="{% static 'images/momDad10.jpg'%}" alt="">
-                </div>
-                <div class="hiddenBox"></div>
-                <div>
-                    <img src="{% static 'images/momDad07.jpg'%}" alt="">
-                </div>
-            </div>
-        </div>
+        <table>
+            {% for year in years %}
+            <tr>
+                <th>{{ year }}</th>
+                {% for event in events %}
+                    {% if event.year == year %}
+                        <td>{{event.title}}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
     </main>
     <footer>
         {% block footer %} {% include 'footer.html' %} {% endblock footer %}

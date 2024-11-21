@@ -63,31 +63,34 @@ WSGI_APPLICATION = 'payneFamilyHistory.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         # 'ENGINE': 'django.db.backends.mysql',
+#         'ENGINE': 'mysql.connector.django',
+#         # 'NAME': 'DB',
+#         'NAME': 'craftsnh_paynes',
+#         # 'USER': 'DB_USER',
+#         'USER': 'root',
+#         # 'PASSWORD': 'DB_PASSWORD',
+#         'PASSWORD': 'HoneyBee#4',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.mysql',
-        'ENGINE': 'mysql.connector.django',
-        # 'NAME': 'DB',
+        # 'ENGINE': 'mysql.connector.django',
+        'ENGINE':'django.db.backends.mysql',
         'NAME': 'craftsnh_paynes',
-        # 'USER': 'DB_USER',
+        # 'USER': 'craftsnh_root',
         'USER': 'root',
-        # 'PASSWORD': 'DB_PASSWORD',
+        # 'PASSWORD': 'CopperTone#21',
         'PASSWORD': 'HoneyBee#4',
         'HOST': 'localhost',
         'PORT': '3306',
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'mysql.connector.django',
-#         'NAME': 'craftsnh_paynes',
-#         'USER': 'craftsnh_root',
-#         'PASSWORD': 'CopperTone#21',
-#         'HOST': 'localhost',
-#         'PORT': '3306',
-#     }
-# }
 
 
 AUTH_PASSWORD_VALIDATORS = [
